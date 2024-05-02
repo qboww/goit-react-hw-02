@@ -32,16 +32,18 @@ const App = () => {
 
   return (
     <div className="container">
-      <Description />
-      <Options updateFeedback={updateFeedback} />
-      {totalFeedback > 0 && (
-        <Feedback
-          feedback={feedback}
-          totalFeedback={totalFeedback}
-          positiveFeedback={positiveFeedback}
-          handleReset={handleReset}
-        />
-      )}
+      <div className="card">
+        <Description />
+        <Options updateFeedback={updateFeedback} />
+        {totalFeedback > 0 && (
+          <Feedback
+            feedback={feedback}
+            totalFeedback={totalFeedback}
+            positiveFeedback={positiveFeedback}
+            handleReset={handleReset}
+          />
+        )}
+      </div>
     </div>
   );
 };
