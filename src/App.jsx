@@ -31,7 +31,7 @@ const App = () => {
   };
 
   return (
-    <div>
+    <div className="container">
       <Description />
       <Options updateFeedback={updateFeedback} />
       {totalFeedback > 0 && (
