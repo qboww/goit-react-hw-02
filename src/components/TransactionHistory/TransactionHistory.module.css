@@ -1,0 +1,31 @@
+.transactionTable {
+  width: 100%;
+  color: black;
+  border: 1px solid black;
+  border-collapse: collapse;
+  max-width: 700px;
+}
+
+.transactionTableHead > tr > th {
+  background-color: #2a2a2a;
+  color: white;
+  border: 1px solid black;
+  text-align: center;
+  font-size: 16px;
+  padding: 4px;
+}
+
+.transactionTable > tbody > tr {
+  background-color: #ffffff;
+}
+
+.transactionTableBody tr:nth-child(odd) {
+  background-color: #d3d3d3;
+}
+
+.transactionTableBody > tr > td {
+  border: 1px solid black;
+  text-align: start;
+  font-weight: 500;
+  padding: 4px 8px;
+}

@@ -1,0 +1,73 @@
+.userCard {
+  background-color: #fafafa;
+  border-radius: 8px;
+  border: 2px solid black;
+  color: black;
+  max-width: 300px;
+  height: auto;
+  text-align: center;
+}
+
+.userCardBody {
+  padding: 16px 32px;
+}
+
+.userCardBody > img {
+  width: 150px;
+  background-color: #2a2a2a;
+  border-radius: 50%;
+}
+
+.userName {
+  font-weight: bold;
+  font-size: 24px;
+  margin: 12px;
+}
+
+.userTag {
+  color: #808080;
+  font-weight: 500;
+  font-size: 16px;
+  margin: 0px;
+}
+
+.userLocation {
+  color: #808080;
+  font-weight: 500;
+  font-size: 16px;
+  margin: 0px;
+}
+
+.userCardStats {
+  padding: 0px;
+  margin: 0px;
+
+  display: flex;
+  justify-content: space-between;
+
+  border-top: 2px solid #808080;
+  background-color: #d3d3d3;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.userCardStats > li {
+  border-right: 2px solid #808080;
+  text-align: center;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  width: calc(100% / 3);
+}
+
+.userCardStats > li:last-child {
+  border-right: none;
+}
+
+.statName {
+  font-weight: 00;
+}
+
+.statData {
+  font-weight: 700;
+}
