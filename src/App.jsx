@@ -34,7 +34,11 @@ const App = () => {
     <div className="container">
       <div className="card">
         <Description />
-        <Options updateFeedback={updateFeedback} />
+        <Options
+          totalFeedback={totalFeedback}
+          updateFeedback={updateFeedback}
+          handleReset={handleReset}
+        />
         {totalFeedback > 0 && (
           <Feedback
             feedback={feedback}

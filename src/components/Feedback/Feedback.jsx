@@ -1,4 +1,4 @@
-const Feedback = ({ feedback, totalFeedback, positiveFeedback, handleReset }) => {
+const Feedback = ({ feedback, totalFeedback, positiveFeedback }) => {
   return (
     <div>
       <h2>Feedback</h2>
@@ -7,7 +7,6 @@ const Feedback = ({ feedback, totalFeedback, positiveFeedback, handleReset }) =>
       <p>Bad: {feedback.bad}</p>
       <p>Total: {totalFeedback}</p>
       <p>Positive feedback: {positiveFeedback}%</p>
-      {totalFeedback > 0 && <button onClick={handleReset}>Reset</button>}
     </div>
   );
 };
