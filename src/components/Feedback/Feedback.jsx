@@ -7,9 +7,8 @@ const Feedback = ({ feedback, totalFeedback, positiveFeedback, handleReset }) =>
       <p>Bad: {feedback.bad}</p>
       <p>Total: {totalFeedback}</p>
       <p>Positive feedback: {positiveFeedback}%</p>
-      <button onClick={handleReset}>Reset</button>
+      {totalFeedback > 0 && <button onClick={handleReset}>Reset</button>}
     </div>
   );
 };
-
 export default Feedback;
