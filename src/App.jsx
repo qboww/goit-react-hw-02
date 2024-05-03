@@ -48,7 +48,7 @@ const App = () => {
             handleReset={handleReset}
           />
         ) : (
-          <Notification />
+          <Notification message="No feedback yet" />
         )}
       </div>
     </div>
