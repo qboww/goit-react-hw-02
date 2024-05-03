@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import Description from "./components/Description/Description";
 import Options from "./components/Options/Options";
 import Feedback from "./components/Feedback/Feedback";
+import Notification from "./components/Notification/Notification";
 
 const App = () => {
   const [feedback, setFeedback] = useState(() => {
@@ -39,13 +40,15 @@ const App = () => {
           updateFeedback={updateFeedback}
           handleReset={handleReset}
         />
-        {totalFeedback > 0 && (
+        {totalFeedback > 0 ? (
           <Feedback
             feedback={feedback}
             totalFeedback={totalFeedback}
             positiveFeedback={positiveFeedback}
             handleReset={handleReset}
           />
+        ) : (
+          <Notification />
         )}
       </div>
     </div>
